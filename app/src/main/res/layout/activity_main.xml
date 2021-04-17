@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/linearLayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="Desafio Android"
+        android:textSize="25sp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/white"
+        android:background="@color/primaryColor"/>
+
+    <ListView
+        android:id="@+id/lvColors"
+        android:layout_width="wrap_content"
+        android:layout_height="570dp"
+        android:layout_weight="9"
+        tools:ignore="MissingConstraints"
+        tools:layout_conversion_absoluteHeight="687dp"
+        tools:layout_conversion_absoluteWidth="411dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        app:maxImageSize="42dp"
+        android:contentDescription="TODO"
+        android:drawingCacheQuality="auto"
+        app:ensureMinTouchTargetSize="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add_circle_outline"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+</LinearLayout>

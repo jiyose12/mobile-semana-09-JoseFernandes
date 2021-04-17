@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="Desafio Android"
+        android:textSize="25sp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/white"
+        android:background="@color/primaryColor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="Cor"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:textColor="#6b6b6b"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/etColorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            android:hint="Nome da Cor"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Vermelho"/>
+            <SeekBar
+                android:id="@+id/sbRedInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="100"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Verde"/>
+            <SeekBar
+                android:id="@+id/sbGreenInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="100"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Azul"/>
+            <SeekBar
+                android:id="@+id/sbBlueInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="100"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btCode"
+            android:layout_width="120sp"
+            android:layout_height="100sp"
+            android:text="#000000"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="20sp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200sp">
+        <Button
+            android:id="@+id/btSave"
+            android:text="SALVAR"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5sp"/>
+        <Button
+            android:id="@+id/btCancel"
+            android:text="CANCELAR"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"/>
+    </LinearLayout>
+</LinearLayout>
